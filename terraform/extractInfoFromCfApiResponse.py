@@ -9,15 +9,15 @@ path = g.fileopenbox()
 jsonFile = open(path)
 json = json.load(jsonFile)
 
-for record in json['result']:
+for record in json["result"]:
     out = {
-        'id': record['id'],
-        'name': record['name'],
-        'type': record['type'],
-        'content': record['content'],
+        "id": record["id"],
+        "name": record["name"],
+        "type": record["type"],
+        "content": record["content"],
     }
-    if 'comment' in record:
-        out['comment'] = record['comment']
-    if 'data' in record:
-        out['data'] = record['data']
+    if "comment" in record:
+        out["comment"] = record["comment"]
+    if "data" in record:
+        out["data"] = record["data"]
     print(out)
